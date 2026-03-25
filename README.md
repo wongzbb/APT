@@ -1,18 +1,18 @@
 
 # TEA: Test-time Energy Adaptation
 
-> Yige Yuan, Bingbing Xu, Liang Hou, Fei Sun, Huawei Shen, Xueqi Cheng
+> Zhenbin Wang, Lei Zhang, Lituan Wang, Zhenwei Zhang, Guangwu Qian, Yan Wang, Wei Huang 
 > 
-> The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR), 2024
+> The IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR), 2026
 
-This is an official PyTorch implementation of paper [TEA: Test-time Energy Adaptation](https://arxiv.org/abs/2311.14402).
+<!-- This is an official PyTorch implementation of paper [TEA: Test-time Energy Adaptation](https://arxiv.org/abs/2311.14402). -->
 
-![Our Proposed TEA](./pic/tea.jpg)
+![Our Proposed TEA](./pic/apt.jpg)
 
 ### Main Usage
 
 ```python
-CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/energy.yaml
+CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/schrodinger.yaml
 ```
 The default model using trained WRN-28-10 from [RobustBench](https://github.com/RobustBench/robustbench).
 
@@ -29,6 +29,7 @@ Our code supports running other baselines with a one-line script, the supported 
 - **ETA:** Efficient Test-Time Model Adaptation without Forgetting (ICML 2022)
 - **EATA:** Efficient Test-Time Model Adaptation without Forgetting (ICML 2022)
 - **SAR:** Towards Stable Test-time Adaptation in Dynamic Wild World (ICLR 2023)
+- - **TEA:** TEA: Test-time Energy Adaptation (CVPR 2024)
 
 ```python
 # Baselines
@@ -40,9 +41,10 @@ CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/eata.yaml
 CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/sar.yaml
 CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/pl.yaml
 CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/shot.yaml
+CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/schrodinger.yaml
 ```
 
-### Reference
+<!-- ### Reference
 If you find our work useful, please consider citing our paper:
 ```
 @article{yuan2023tea,
@@ -51,4 +53,4 @@ If you find our work useful, please consider citing our paper:
   journal={arXiv preprint arXiv:2311.14402},
   year={2023}
 }
-```
+``` -->
