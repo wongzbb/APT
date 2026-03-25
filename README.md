@@ -31,7 +31,7 @@ Our code supports running other baselines with a one-line script, the supported 
 - **SAR:** Towards Stable Test-time Adaptation in Dynamic Wild World (ICLR 2023)
 - - **TEA:** TEA: Test-time Energy Adaptation (CVPR 2024)
 
-```python
+<!-- ```python
 # Baselines
 CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/source.yaml
 CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/norm.yaml
@@ -42,7 +42,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/sar.yaml
 CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/pl.yaml
 CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/shot.yaml
 CUDA_VISIBLE_DEVICES=0 python main.py --cfg cfgs/cifar10/schrodinger.yaml
-```
+``` -->
 
 <!-- ### Reference
 If you find our work useful, please consider citing our paper:
