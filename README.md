@@ -29,7 +29,7 @@ Our code supports running other baselines with a one-line script, the supported 
 - **ETA:** Efficient Test-Time Model Adaptation without Forgetting (ICML 2022)
 - **EATA:** Efficient Test-Time Model Adaptation without Forgetting (ICML 2022)
 - **SAR:** Towards Stable Test-time Adaptation in Dynamic Wild World (ICLR 2023)
-- - **TEA:** TEA: Test-time Energy Adaptation (CVPR 2024)
+- **TEA:** TEA: Test-time Energy Adaptation (CVPR 2024)
 
 <!-- ```python
 # Baselines
