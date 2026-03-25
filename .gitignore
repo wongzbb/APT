@@ -1,0 +1,21 @@
+## General
+
+*.pyc
+__pycache__/
+.ropeproject/
+
+*.pkl
+*.npy
+
+*.ipynb_checkpoints
+
+.envrc
+
+## Project
+*.pth
+*.pt
+ckpt/
+experiments/
+output*/
+save*/
+.others/

@@ -1,0 +1,64 @@
+SAVE_DIR: ./save/cifar100/bn-wrn-28-10
+MODEL:
+  ADAPTATION: schrodinger
+  ARCH: WRN2810_BN
+  ADA_PARAM:
+    - bn
+SCHRODINGER:
+  THRESHOLD: -0.01
+  ALPHA: 1.0
+  BETA: 1.0
+  GAMMA: 0.01
+  DELTA: 0.01
+  ZETA: 1.0
+  EPSILON: 0.001
+  H: 1.0
+  M: 1.0
+  E: 1.0
+  V0: 1.0
+  TRAIN_SCHRODINGERHEAd_EPOCHS: 1000
+  HEAD_LR: 0.0001
+  SAVE_HEAD_DIR: ./save/cifar100/schrodinger_head_3/
+  LOAD_HEAD_DIR: ./save/cifar100/schrodinger_head_3/cifar/schrodingerHead_900.pth
+  ADA_HEAD_DURING_TEST: False
+  # DOMAIN_LEFT: -100
+  # DOMAIN_RIGHT: 0
+  BOUNDARY_LEFT: -30.0
+  BOUNDARY_RIGHT: 0.0
+  IND_THRESHOLD: 0.9
+  USE_SCHRODINGERHEAd_LOSS: True
+CORRUPTION:
+  DATASET: cifar100
+  NUM_CLASSES: 100
+  IMG_SIZE: 32
+  NUM_CHANNEL: 3
+  SEVERITY:
+    - 5
+    - 4
+    - 3
+    - 2
+    - 1
+  TYPE:
+    - gaussian_noise
+    - shot_noise
+    - impulse_noise
+    - defocus_blur
+    - glass_blur
+    - motion_blur
+    - zoom_blur
+    - snow
+    - frost
+    - fog
+    - brightness
+    - contrast
+    - elastic_transform
+    - pixelate
+    - jpeg_compression
+OPTIM:
+  BATCH_SIZE: 200
+  METHOD: Adam
+  STEPS: 1
+  BETA: 0.7
+  LR: 0.002
+  WD: 0.
+  # EPSILON: 0.001
