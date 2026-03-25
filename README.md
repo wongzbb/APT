@@ -1,5 +1,5 @@
 
-# TEA: Test-time Energy Adaptation
+<!-- # TEA: Test-time Energy Adaptation -->
 
 > Zhenbin Wang, Lei Zhang, Lituan Wang, Zhenwei Zhang, Guangwu Qian, Yan Wang, Wei Huang 
 > 
